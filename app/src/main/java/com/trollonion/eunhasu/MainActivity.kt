@@ -10,7 +10,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         startbutton.setOnClickListener {
-            val intent = Intent(this, Activity2::class.java)
+            val intent = Intent(this, MapsActivity::class.java)
+            startActivity(intent)
+        }
+        infobutton.setOnClickListener {
+            val intent = Intent(this, InfoActivity::class.java)
             startActivity(intent)
         }
     }

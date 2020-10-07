@@ -31,6 +31,7 @@ class Activity2 : AppCompatActivity(), OnMapReadyCallback {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.activity_2)
 
         val mapFragment = supportFragmentManager
@@ -85,10 +86,10 @@ class Activity2 : AppCompatActivity(), OnMapReadyCallback {
             val location = locationResult?.lastLocation
 
 
-            /*location?.run {
+            location?.run {
                 val latLng = LatLng(latitude, longitude)
                 mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 17f))
-            }*/
+            }
         }
     }
 
@@ -120,9 +121,10 @@ class Activity2 : AppCompatActivity(), OnMapReadyCallback {
     }
 
     override fun onMapReady(googleMap: GoogleMap) {
-        if (googleMap != null) {
+        /*if (googleMap != null) {
             mMap = googleMap
-        }
+        }*/
+        mMap = googleMap
         val dummy2 = LatLng(36.3166954, 127.372328)
         mMap.addMarker(MarkerOptions().position(dummy2).title("생활방범, 360전방"))
         mMap.moveCamera(CameraUpdateFactory.newLatLng(dummy2))
