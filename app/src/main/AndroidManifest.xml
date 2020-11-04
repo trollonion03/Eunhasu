@@ -35,9 +35,7 @@
             android:name=".MapsActivity2"
             android:label="@string/title_activity_maps2" />
         <activity android:name=".SplashActvity" />
-        <activity
-            android:name=".MapsActivity"
-            android:label="@string/title_activity_maps" />
+//api 키 
         <activity android:name=".Activity2" />
         <activity android:name=".MainActivity">
             <intent-filter>
