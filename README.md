@@ -29,3 +29,5 @@ added bug report
 added current location box(fixed)
 added new icon
 Ui/UX improved"
+
+Test environment : Galaxy Note 5(SM-N920S, 7.0, api24)
