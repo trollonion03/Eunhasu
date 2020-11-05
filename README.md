@@ -1,10 +1,16 @@
 # Eunhasu
 Hi there
+
+
 DSHS Team project Eunhasu
+
 developed by Trollonion03
+
 thank you for Kim Yoongi, Lee Jaehyun, Kim minchul.
 
 Changelog
+
+
 ver 1.0 (2020/10/02)
 added cctv location with simple info(doma-dong, Daejeon, Republic of Korea), (work in progress)
 added current location tracking.
