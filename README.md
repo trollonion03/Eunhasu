@@ -48,6 +48,6 @@ Note
 ----
 Test environment : Galaxy Note 5(SM-N920S, 7.0, api24)
 
-google-map api-key not included!
+google-map api-key, AndroidManifest.xml are not included!
 
 This app is unstable!
