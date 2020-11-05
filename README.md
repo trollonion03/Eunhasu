@@ -44,4 +44,10 @@ added current location box(fixed)
 added new icon
 Ui/UX improved"
 
+Note
+----
 Test environment : Galaxy Note 5(SM-N920S, 7.0, api24)
+
+google-map api-key not included!
+
+This app is unstable!
