@@ -43,6 +43,7 @@ added new icon
 Ui/UX improved
 
 ver 2.2(lastest) (2020/11/02, Lastest version)
+----------------------------------------------
 
 added emergency-call(dial 112)
 
