@@ -42,7 +42,7 @@ added new icon
 
 Ui/UX improved
 
-ver 2.2(lastest) (2020/11/02, Lastest version)
+ver 2.2 (2020/11/02)
 ----------------------------------------------
 
 added emergency-call(dial 112)
@@ -53,11 +53,19 @@ added current location box(fixed)
 
 added new icon
 
-Ui/UX improved"
+Ui/UX improved
+
+ver 3.0(lastest) (2020/12/29, Lastest build)
+--------------------------------------------
+Changed CCTV location data into Police station location data
+
+some performence optimized
+
+UI/UX improved
 
 Note
 ----
-Test environment : Galaxy Note 5(SM-N920S, 7.0, api24)
+Test environment : Galaxy Note 5(SM-N920S, 7.0, api24), Galaxy note 9(SM-N960S, 10)
 
 google-map api-key, AndroidManifest.xml are not included!
 
