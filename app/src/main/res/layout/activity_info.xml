@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/colorBack"
     android:layout_height="match_parent"
     tools:context=".InfoActivity">
 
@@ -14,6 +15,7 @@
         android:gravity="center|center_horizontal"
         android:text="Project Eunhasu-범죄예방앱"
         android:textSize="27sp"
+        android:fontFamily="@font/nmgothic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="178dp"
-        android:fontFamily="sans-serif-medium"
+        android:fontFamily="@font/nmgothic"
         android:text="사용 언어 : Kotlin \n 메인 개발자 \n김형언\nTrollonion03@gmail.com\ngihtub.com/trollonion03\n보조 개발자\n김윤기\n기획 및 데이터정리\n이재현\n김민철"
         android:textColor="#000000"
         android:textSize="20sp"
@@ -39,7 +41,9 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/changelog"
+        android:fontFamily="@font/nmgothic"
         android:text="Changelog"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
