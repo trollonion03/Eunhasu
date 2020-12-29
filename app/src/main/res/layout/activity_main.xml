@@ -4,53 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorBack"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/maintitle"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="224dp"
-        android:fontFamily="serif-monospace"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="223dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/nmgothic"
         android:text="범죄예방앱"
         android:textSize="36sp"
         android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/locText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/startbutton"
         android:layout_width="180dp"
         android:layout_height="180dp"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/btn1_background"
         android:drawableTop="@drawable/ic_baseline_map_24"
-        android:fontFamily="serif-monospace"
+        android:fontFamily="@font/nmgothic"
         android:text="시작하기"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/locText" />
+        app:layout_constraintBottom_toTopOf="@+id/bugreport"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/infobutton"
         android:layout_width="180dp"
         android:layout_height="180dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="216dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/btn1_background"
         android:drawableTop="@drawable/ic_baseline_info_24"
-        android:fontFamily="serif-monospace"
+        android:fontFamily="@font/nmgothic"
         android:text="정보"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/reportPolice" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bugreport"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/locText"
@@ -58,8 +58,8 @@
         android:layout_height="58dp"
         android:layout_margin="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/txt_loc"
         android:drawableLeft="@drawable/ic_baseline_my_location_24"
         android:drawablePadding="20dp"
@@ -69,42 +69,41 @@
         android:text="위치"
         android:textAlignment="viewStart"
         android:textSize="19sp"
+        app:layout_constraintBottom_toTopOf="@+id/startbutton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/maintitle"
         tools:ignore="RtlCompat" />
 
     <Button
         android:id="@+id/reportPolice"
         android:layout_width="180dp"
         android:layout_height="180dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="19dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/btn1_background"
         android:drawableTop="@drawable/ic_baseline_phone_in_talk_24"
-        android:fontFamily="serif-monospace"
+        android:fontFamily="@font/nmgothic"
         android:text="긴급전화(경찰)"
         android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/infobutton"
         app:layout_constraintEnd_toStartOf="@+id/startbutton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/locText" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/bugreport"
         android:layout_width="180dp"
         android:layout_height="180dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="216dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/btn1_background"
         android:drawableTop="@drawable/ic_baseline_send_24"
-        android:fontFamily="serif-monospace"
+        android:fontFamily="@font/nmgothic"
         android:text="버그 제보하기"
         android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/infobutton"
-        app:layout_constraintTop_toBottomOf="@+id/startbutton" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
